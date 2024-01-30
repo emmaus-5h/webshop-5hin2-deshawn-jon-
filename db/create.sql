@@ -2,6 +2,20 @@
 -- create tables
 --
 
+-- feedback GEE 30 jan
+-- doe de volgende stappen uiot de opdracht (in de volgorde zoals ze er staan)
+-- 1.Maak tabellen en velden (CREATE TABLE commando) in je database waarin alle informatie kan worden opgeslagen die je over je producten wilt tonen.
+-- 2. Vul de tabellen met informatie (INSERT commando)
+-- 3. Voeg eventueel plaatjes toe (web/images map)
+--
+  -- jullie verkopen shirts en andere producten van clubs
+  -- de informatie over clubs zet je in een aparte tebel
+  -- je verwijst vanuit je producten tabel naar het id van de club in de club-tabel
+  -- op die manier staat alle club informatie er maar 1x in.
+  --  in video 4 wordt dit min of meer voorgedaan met een ander voorbeeld, wat je zelf kunt aanpassen
+--
+-- kijk daarna in de opdracht bij de beoordling wat je nog meer moet doen
+
 CREATE TABLE products (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   code VARCHAR(15),
