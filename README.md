@@ -203,3 +203,24 @@ for help almost 24x7 with many questions and problems and providing basic shop c
 
 
 
+API
+1. zie api/indjex.js
+2. bij  app.get('/api/products', getProducts)
+3. staat dat je in getPRoducts de code vindt als je /api/prudcuts opvraagt
+4. db.prepare('SELECT products.id AS id, products.name AS name, products.description AS description, products.code AS code, products.price AS price FROM products ORDER BY id ASC')
+5. deze query moet tje aanpassen/ Let op! gebruik altijd AS om de velden een naam te geven.
+6. velden uit je products tabel die je zelf gemaakt hebt kun je toevoegen<br>
+je kunt ook JOIN gebruiken om 1;N relaties toe te voegen
+
+2.web
+zie web/index.html
+het template onder <!-- template for product info-->
+wordt gekopieerd voor elk artikel
+dus alle info die je wilt toegvoegen,
+daarvoor moet je in een template aanpassingen maken
+
+in het script voeg je de waarde uit de apiu toe aan de webpagina
+doe dat onder
+// voeg product toe aan DOM, 
+
+als dit gedaan is cijfer voor site 5,5
