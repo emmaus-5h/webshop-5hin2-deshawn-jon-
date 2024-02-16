@@ -26,10 +26,7 @@
     name VARCHAR(100)
     );
 
-  CREATE TABLE platforms (
-      id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name VARCHAR(100)
-  )
+
 
 
 
@@ -46,7 +43,7 @@
   insert into products (name, description, code, price, team_id) values ('Feyenoord Thuisshirt 23/24', 'Thuis Tenue Feyenoord 23/24', '077030122-3', 55, 1);
   insert into products (name, description, code, price, team_id) values ('Manchester United Thuisshirt 23/24', 'Thuis Tenue Manchester United 23/24', '445924201-X', 55, 1);
   insert into products (name, description, code, price, team_id) values ('Manchester City Thuisshirt 23/24', 'Thuis Tenue Manchester City 23/24', '693155505-7', 55, 1);
-  insert into products (name, description, code, price team_id) values ('FC Barcelona Thuisshirt 23/24', 'Thuis Tenue FC Barcelona 23/24', '686928463-6', 55, 1);
+  insert into products (name, description, code, price, team_id) values ('FC Barcelona Thuisshirt 23/24', 'Thuis Tenue FC Barcelona 23/24', '686928463-6', 55, 1);
   insert into products (name, description, code, price, team_id) values ('Inter Milan Thuisshirt 23/24', 'Thuis Tenue AC Milan 23/24', '492662523-7', 55, 1);
   insert into products (name, description, code, price, team_id) values ('Paris Saint-Germain FC Thuisshirt 23/24', 'Thuis Tenue Paris Saint-Germain FC 23/24', '692662523-7', 55, 1);
   insert into products (name, description, code, price, team_id) values ('FC Bayern München Thuisshirt 23/24', 'Thuis Tenue FC Bayern München 23/24', '482662523-7', 55, 1);
