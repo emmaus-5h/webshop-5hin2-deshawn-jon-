@@ -21,6 +21,8 @@ CREATE TABLE products (
   code VARCHAR(15),
   name VARCHAR(30),
   team_id INTEGER,
+  landen_id INTEGER,
+  materiaal_id INTEGER
   description TEXT,
   price NUMERIC(10, 2)
 );
@@ -28,6 +30,19 @@ CREATE TABLE teams (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name VARCHAR(100)
   );
+
+CREATE TABLE landen (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name VARCHAR(100)
+  );
+
+CREATE TABLE materiaal (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name VARCHAR(100)
+  );
+
+
+
 
 CREATE TABLE platforms (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -45,18 +60,47 @@ CREATE TABLE platforms (
 -- want different data? check: https://www.mockaroo.com/910b6c20
 --
 
-insert into products (name, description, code, price, team_id) values ('Real Madrid Thuisshirt 23/24', 'Thuis Tenue Real Madrid CF 23/24', '816905633-0', 55, 1);
-insert into products (name, description, code, price, team_id) values ('Feyenoord Thuisshirt 23/24', 'Thuis Tenue Feyenoord 23/24', '077030122-3', 55, 1);
-insert into products (name, description, code, price, team_id) values ('Manchester United Thuisshirt 23/24', 'Thuis Tenue Manchester United 23/24', '445924201-X', 55, 1);
-insert into products (name, description, code, price, team_id) values ('Manchester City Thuisshirt 23/24', 'Thuis Tenue Manchester City 23/24', '693155505-7', 55, 1);
-insert into products (name, description, code, price team_id) values ('FC Barcelona Thuisshirt 23/24', 'Thuis Tenue FC Barcelona 23/24', '686928463-6', 55, 1);
-insert into products (name, description, code, price, team_id) values ('Inter Milan Thuisshirt 23/24', 'Thuis Tenue AC Milan 23/24', '492662523-7', 55, 1);
-insert into products (name, description, code, price, team_id) values ('Paris Saint-Germain FC Thuisshirt 23/24', 'Thuis Tenue Paris Saint-Germain FC 23/24', '692662523-7', 55, 1);
-insert into products (name, description, code, price, team_id) values ('FC Bayern München Thuisshirt 23/24', 'Thuis Tenue FC Bayern München 23/24', '482662523-7', 55, 1);
-insert into products (name, description, code, price, team_id) values ('Borussia Dortmund Thuisshirt 23/24', 'Thuis Tenue Borussia Dortmund 23/24', '452662523-7', 55, 1);
-insert into products (name, description, code, price, team_id) values ('Arsenal FC Thuisshirt 23/24', 'Thuis Tenue Arsenal FC 23/24', '492663523-7', 55, 1);
+insert into products (name, description, code, price, team_id, landen_id, materiaal_id) values ('Real Madrid Thuisshirt 23/24', 'Thuis Tenue Real Madrid CF 23/24', '816905633-0', 55, 1, 3, 1);
+insert into products (name, description, code, price, team_id, landen_id, materiaal_id) values ('Feyenoord Thuisshirt 23/24', 'Thuis Tenue Feyenoord 23/24', '077030122-3', 55, 2, 1, 1);
+insert into products (name, description, code, price, team_id, landen_id, materiaal_id) values ('Manchester United Thuisshirt 23/24', 'Thuis Tenue Manchester United 23/24', '445924201-X', 55, 3, 4, 1);
+insert into products (name, description, code, price, team_id, landen_id, materiaal_id) values ('Manchester City Thuisshirt 23/24', 'Thuis Tenue Manchester City 23/24', '693155505-7', 55, 4, 4, 1);
+insert into products (name, description, code, price, team_id, landen_id, materiaal_id) values ('FC Barcelona Thuisshirt 23/24', 'Thuis Tenue FC Barcelona 23/24', '686928463-6', 55, 5, 3, 1);
+insert into products (name, description, code, price, team_id, landen_id, materiaal_id) values ('Inter Milan Thuisshirt 23/24', 'Thuis Tenue AC Milan 23/24', '492662523-7', 55, 6, 6, 1);
+insert into products (name, description, code, price, team_id, landen_id, materiaal_id) values ('Paris Saint-Germain FC Thuisshirt 23/24', 'Thuis Tenue Paris Saint-Germain FC 23/24', '692662523-7', 55, 7, 2, 1);
+insert into products (name, description, code, price, team_id, landen_id, materiaal_id) values ('FC Bayern München Thuisshirt 23/24', 'Thuis Tenue FC Bayern München 23/24', '482662523-7', 55, 8, 5, 1);
+insert into products (name, description, code, price, team_id, landen_id, materiaal_id) values ('Borussia Dortmund Thuisshirt 23/24', 'Thuis Tenue Borussia Dortmund 23/24', '452662523-7', 55, 9, 5, 1);
+insert into products (name, description, code, price, team_id, landen_id, materiaal_id) values ('Arsenal FC Thuisshirt 23/24', 'Thuis Tenue Arsenal FC 23/24', '492663523-7', 55, 10, 4, 1);
 
 
-insert into teams (name) values ('Arsenal'); 
+
+--teams
 insert into teams (name) values ('Real Madrid'); 
-insert into teams (name) values ('Manchester united'); 
+insert into teams (name) values ('Feyenoord'); 
+insert into teams (name) values ('manchester United'); 
+insert into teams (name) values ('manchester city'); 
+insert into teams (name) values ('FC Barcelona'); 
+insert into teams (name) values ('Inter Milan'); 
+insert into teams (name) values ('Paris Saint-Germain'); 
+insert into teams (name) values ('FC Bayern München'); 
+insert into teams (name) values ('Borussia Dortmund'); 
+insert into teams (name) values ('Arsenal FC'); 
+
+--landen
+insert into landen (name) values ('Nederland'); 
+insert into landen (name) values ('Frankrijk'); 
+insert into landen (name) values ('Spanje'); 
+insert into landen (name) values ('Engeland'); 
+insert into landen (name) values ('Duitsland'); 
+insert into landen (name) values ('Italië'); 
+
+--materiaal
+insert into landen (name) values ('Polyester'); 
+
+--merken
+insert into landen (name) values ('Nike'); 
+insert into landen (name) values ('Adidas'); 
+insert into landen (name) values ('Castore'); 
+insert into landen (name) values ('Puma');
+
+
+
