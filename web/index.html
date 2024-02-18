@@ -1,4 +1,4 @@
-<!doctype html>
+  <!doctype html>
 <html lang="nl">
 
 <head>
@@ -58,6 +58,9 @@
 				<div class="card-body">
 					<p class="product_description card-text"></p>
 					<ul class="product-properties">
+            <li><span class="propert-name">materiaal:</span><span class="product_materiaal"></span></li>
+            <li><span class="propert-name">kleur:</span><span class="product_kleur"></span></li>
+            <li><span class="propert-name">land:</span><span class="product_land"></span></li>
 						<li><span class="propert-name">Prijs:</span><span class="product_price"></span></li>
 						<li><span class="propert-name">Code:</span><span class="product_code"></span></li>
 					</ul>
@@ -122,6 +125,9 @@
               const clone = template.content.cloneNode(true);
               clone.querySelector(".product_title").textContent = name
               clone.querySelector(".product_description").textContent =`${product.description.substr(0, 100)}...`
+              clone.querySelector(".product_land").textContent =`${product.land}`
+              clone.querySelector(".product_materiaal").textContent =`${product.materiaal}`
+              clone.querySelector(".product_kleur").textContent =`${product.kleur}`
               clone.querySelector(".product_price").textContent = `€ ${product.price.toFixed(2)}`
               clone.querySelector(".product_code").textContent = product.code
               clone.querySelector(".product_id").value = product.id
