@@ -39,7 +39,7 @@ CREATE TABLE kleur (
 CREATE TABLE ProductMetLand (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   products_id INTEGER,
-  land_id INTEGER,
+  land_id INTEGER
 );
 
 
@@ -56,7 +56,7 @@ CREATE TABLE ProductMetLand (
   -- want different data? check: https://www.mockaroo.com/910b6c20
   --
 
-  insert into products (name, description, code, price, land_id, materiaal_id, kleur_id) values ('Real Madrid Thuisshirt 23/24', 'Thuis Tenue Real Madrid CF 23/24', '816905633-0', 89, 1, 1, 5);
+  insert into products (name, description, code, price, land_id, materiaal_id, kleur_id) values ('Real Madrid Thuisshirt 23/24', 'Thuis Tenue Real Madrid CF 23/24', '816905633-0', 89, 3, 1, 2);
   insert into products (name, description, code, price, land_id, materiaal_id, kleur_id) values ('Feyenoord Thuisshirt 23/24', 'Thuis Tenue Feyenoord 23/24', '077030122-3', 90, 2, 1, 4);
   insert into products (name, description, code, price, land_id, materiaal_id, kleur_id) values ('Manchester United Thuisshirt 23/24', 'Thuis Tenue Manchester United 23/24', '445924201-X', 99, 3, 1, 2);
   insert into products (name, description, code, price, land_id, materiaal_id, kleur_id) values ('Manchester City Thuisshirt 23/24', 'Thuis Tenue Manchester City 23/24', '693155505-7', 89, 3, 1, 4);
@@ -91,61 +91,60 @@ insert into kleur (name) values ('goud');
 
 
 -- product en Land
- insert into ProductMetLand (products_id,land_id) values (1, 1 );
-  insert into ProductMetLand (products_id,land_id) values (1, 3 );
-  insert into ProductMetLand (products_id,land_id) values (1, 4 );
-  insert into ProductMetLand (products_id,land_id) values (2, 1);
-  insert into ProductMetLand (products_id,land_id) values (2, 6);
-  insert into ProductMetLand (products_id,land_id) values (2, 6);
-  insert into ProductMetLand (products_id,land_id) values (2, 5);
-  insert into ProductMetLand (products_id,land_id) values (3, 4);
-  insert into ProductMetLand (products_id,land_id) values (3, 2);
-  insert into ProductMetLand (products_id,land_id) values (3, 4);
-  insert into ProductMetLand (products_id,land_id) values (3, 3);
-  insert into ProductMetLand (products_id,land_id) values (3, 5);
-  insert into ProductMetLand (products_id,land_id) values (3, 3);
-  insert into ProductMetLand (products_id,land_id) values (4, 6);
-  insert into ProductMetLand (products_id,land_id) values (4, 5);
-  insert into ProductMetLand (products_id,land_id) values (4, 2);
-  insert into ProductMetLand (products_id,land_id) values (4, 5);
-  insert into ProductMetLand (products_id,land_id) values (4, 5);
-  insert into ProductMetLand (products_id,land_id) values (4, 1);
-  insert into ProductMetLand (products_id,land_id) values (5, 1);
-  insert into ProductMetLand (products_id,land_id) values (5, 3);
-  insert into ProductMetLand (products_id,land_id) values (5, 2);
-  insert into ProductMetLand (products_id,land_id) values (5, 3);
-  insert into ProductMetLand (products_id,land_id) values (5, 2);
-  insert into ProductMetLand (products_id,land_id) values (5, 4);
-  insert into ProductMetLand (products_id,land_id) values (6, 1);
-  insert into ProductMetLand (products_id,land_id) values (6, 1);
-  insert into ProductMetLand (products_id,land_id) values (6, 7);
-  insert into ProductMetLand (products_id,land_id) values (6, 5);
-  insert into ProductMetLand (products_id,land_id) values (6, 3);
-  insert into ProductMetLand (products_id,land_id) values (7, 8);
-  insert into ProductMetLand (products_id,land_id) values (7, 4);
-  insert into ProductMetLand (products_id,land_id) values (7, 7);
-  insert into ProductMetLand (products_id,land_id) values (7, 6);
-  insert into ProductMetLand (products_id,land_id) values (7, 5);
-  insert into ProductMetLand (products_id,land_id) values (7, 4);
-  insert into ProductMetLand (products_id,land_id) values (8, 1);
-  insert into ProductMetLand (products_id,land_id) values (8, 4);
-  insert into ProductMetLand (products_id,land_id) values (8, 2);
-  insert into ProductMetLand (products_id,land_id) values (8, 5);
-  insert into ProductMetLand (products_id,land_id) values (8, 6);
-  insert into ProductMetLand (products_id,land_id) values (8, 2);
-  insert into ProductMetLand (products_id,land_id) values (8, 1);
-  insert into ProductMetLand (products_id,land_id) values (9, 1);
-  insert into ProductMetLand (products_id,land_id) values (9, 6);
-  insert into ProductMetLand (products_id,land_id) values (9, 5);
-  insert into ProductMetLand (products_id,land_id) values (9, 3);
-  insert into ProductMetLand (products_id,land_id) values (9, 4);
-  insert into ProductMetLand (products_id,land_id) values (9, 4);
-  insert into ProductMetLand (products_id,land_id) values (10, 6);
-  insert into ProductMetLand (products_id,land_id) values (10, 1);
-  insert into ProductMetLand (products_id,land_id) values (10, 5);
-  insert into ProductMetLand (products_id,land_id) values (10, 5);
-  insert into ProductMetLand (products_id,land_id) values (10, 3);
-  insert into ProductMetLand (products_id,land_id) values (10, 4);
+ insert into ProductMetLand (products_id, land_id) values (1, 1);
+  insert into ProductMetLand (products_id, land_id) values (1, 3);
+  insert into ProductMetLand (products_id, land_id) values (1, 4);
+  insert into ProductMetLand (products_id, land_id) values (2, 1);
+  insert into ProductMetLand (products_id, land_id) values (2, 6);
+  insert into ProductMetLand (products_id, land_id) values (2, 6);
+  insert into ProductMetLand (products_id, land_id) values (2, 5);
+  insert into ProductMetLand (products_id, land_id) values (3, 4);
+  insert into ProductMetLand (products_id, land_id) values (3, 2);
+  insert into ProductMetLand (products_id, land_id) values (3, 4);
+  insert into ProductMetLand (products_id, land_id) values (3, 3);
+  insert into ProductMetLand (products_id, land_id) values (3, 5);
+  insert into ProductMetLand (products_id, land_id) values (3, 3);
+  insert into ProductMetLand (products_id, land_id) values (4, 6);
+  insert into ProductMetLand (products_id, land_id) values (4, 5);
+  insert into ProductMetLand (products_id, land_id) values (4, 2);
+  insert into ProductMetLand (products_id, land_id) values (4, 5);
+  insert into ProductMetLand (products_id, land_id) values (4, 5);
+  insert into ProductMetLand (products_id, land_id) values (4, 1);
+  insert into ProductMetLand (products_id, land_id) values (5, 1);
+  insert into ProductMetLand (products_id, land_id) values (5, 3);
+  insert into ProductMetLand (products_id, land_id) values (5, 2);
+  insert into ProductMetLand (products_id, land_id) values (5, 3);
+  insert into ProductMetLand (products_id, land_id) values (5, 2);
+  insert into ProductMetLand (products_id, land_id) values (5, 4);
+  insert into ProductMetLand (products_id, land_id) values (6, 1);
+  insert into ProductMetLand (products_id, land_id) values (6, 1);
+  insert into ProductMetLand (products_id, land_id) values (6, 7);
+  insert into ProductMetLand (products_id, land_id) values (6, 5);
+  insert into ProductMetLand (products_id, land_id) values (6, 3);
+  insert into ProductMetLand (products_id, land_id) values (7, 8);
+  insert into ProductMetLand (products_id, land_id) values (7, 4);
+  insert into ProductMetLand (products_id, land_id) values (7, 7);
+  insert into ProductMetLand (products_id, land_id) values (7, 6);
+  insert into ProductMetLand (products_id, land_id) values (7, 5);
+  insert into ProductMetLand (products_id, land_id) values (7, 4);
+  insert into ProductMetLand (products_id, land_id) values (8, 1);
+  insert into ProductMetLand (products_id, land_id) values (8, 4);
+  insert into ProductMetLand (products_id, land_id) values (8, 2);
+  insert into ProductMetLand (products_id, land_id) values (8, 5);
+  insert into ProductMetLand (products_id, land_id) values (8, 6);
+  insert into ProductMetLand (products_id, land_id) values (8, 2);
+  insert into ProductMetLand (products_id, land_id) values (8, 1);
+  insert into ProductMetLand (products_id, land_id) values (9, 1);
+  insert into ProductMetLand (products_id, land_id) values (9, 6);
+  insert into ProductMetLand (products_id, land_id) values (9, 5);
+  insert into ProductMetLand (products_id, land_id) values (9, 3);
+  insert into ProductMetLand (products_id, land_id) values (9, 4);
+  insert into ProductMetLand (products_id, land_id) values (9, 4);
+  insert into ProductMetLand (products_id, land_id) values (10, 1);
+  insert into ProductMetLand (products_id, land_id) values (10, 5);
+  insert into ProductMetLand (products_id, land_id) values (10, 5);
+  insert into ProductMetLand (products_id, land_id) values (10, 3);
+  insert into ProductMetLand (products_id, land_id) values (10, 4);
 
 
 

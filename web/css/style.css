@@ -22,6 +22,18 @@ footer {
   font-family: sherif-sans;
   
 }
+.navbar-brand {
+  font-size: 20px;
+  font-family: sherif-sans;
+
+}
+.h5artikel {
+  font-weight: 900;
+}
+.container {
+  font-family: sherif-sans;
+
+}
 .article-container {
   margin: auto;
 }
